@@ -11,4 +11,14 @@ export class Satellite {
         this.orbitType=orbitType;
         this.operational=operational;
     }
+    //Add a shouldShowWarning method to the Satellite class.
+     shouldShowWarning(): boolean {
+        if (this.type === 'Space Debris'){
+            return true;
+        }else {
+            return false;
+        }
+     }
 }
+
+//<tag (event) = "statement"></tag> 
